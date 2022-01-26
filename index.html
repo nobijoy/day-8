@@ -3,8 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
+    <section class="py-0 bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <ul class="nav left-position">
+                        <li>
+                            <a href="" class="nav-link">
+                                <i class="fas fa-phone-alt"></i>
+                                +8809612342486
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">
+                                <i class="far fa-envelope"></i>
+                                info@bitm.org.bd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav float-right right-position">
+                        <li>
+                            <a class="nav-link">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><i class="far fa-user"></i>Sign in</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/bitm-logo.png" alt="BITM LOGO" class="h-50"/>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 flex-nowrap">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button type="button" class="navbar-toggler menu-position" data-toggle="collapse" data-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="nav float-right">
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="nav-link text-uppercase font-weight-bold dropdown-toggle" data-toggle="dropdown">Courses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="dropdown-item">Training</a></li>
+                                        <li><a href="" class="dropdown-item">Workshop</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">SEIP</a></li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">Assesment</a></li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/basis_logo.png" alt="BASIS LOGO" class="h-50 float-right"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Sign in</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card card-body border-0">
+                        <div class="mx-auto">
+                            <a href=""><i class="fab fa-3x fa-facebook-square"></i></a>
+                            <a href=""><i class="fab fa-3x fa-google-plus-square text-danger"></i></a>
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" class="form-control" placeholder="your password">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-outline-success btn-block" value="Login">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p>Not registered? Click here to register</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
